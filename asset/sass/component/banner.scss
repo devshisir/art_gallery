@@ -1,0 +1,261 @@
+#banner{
+   min-height: 100vh;
+   background-color: #ddd;
+   position: relative;
+   z-index: 1;
+   video{
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      object-fit: cover;
+   }
+   .banar_content{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 999;
+   }
+   .main_content_row{
+      padding-bottom: 100px;
+   }
+   .image_box{
+      img{
+         border-radius: 4px;
+      }
+   }
+   .content_box{
+      padding-left: 20px;
+      h3{
+         color: #fff;
+         font-weight: 700;
+         font-size: 23px;
+      }
+      p{
+         color: #fff;
+         width: 80%;
+         margin-top: 15px;
+      }
+      ul{
+         margin-top: 20px;
+         li{
+            display: inline-block;
+            margin-right: 5px;
+            a{
+               display: block;
+               width: 170px;
+               height: 45px;
+               background: #fff;
+               text-align: center;
+               font-weight: 600;
+               font-size: 14px;
+               color: #333;
+               line-height: 45px;
+               border-radius: 30px;
+               &:hover{
+                  background: #333;
+                  color: #fff;
+               }
+            }
+         }
+      }
+   }
+   .info_box_bottom{
+      margin-top: 40px;
+      h4{
+         color: #fff;
+         font-weight: 600;
+         font-size: 20px;
+      }
+   }
+
+
+   #header_area{
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 99999;
+      padding-top: 40px;
+      .language_area{
+         ul{
+            li{
+               display: inline-block;
+               color: #fff;
+               margin-left: 4px;
+               i{
+                  position: relative;
+                  top: 2px;
+               }
+               a{
+                  font-weight: 600;
+                  text-transform: uppercase;
+                  color: #fff;
+                  font-size: 13px;
+               }
+            }
+            .active{
+               a{
+                  font-weight: 800;
+               }
+            }
+         }
+      }
+      .menu_area{
+         margin-top: 20px;
+         .right_action{
+            ul{
+               li{
+                  display: inline-block;
+                  margin-left: 15px;
+                  a{
+                     font-weight: 600;
+                     font-size: 15px;
+                     color: #fff;
+                     text-transform: uppercase;
+                     i{
+                        margin-left: 4px;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+
+/* XL (laptop) Device :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {}
+
+
+@media (min-width: 1200px) and (max-width: 1300px) {}
+
+
+
+/* LG Device :992px. */
+@media (min-width: 992px) and (max-width: 1199px) {
+   #banner .content_box ul li{
+      margin-bottom: 14px;
+   }
+}
+
+
+/* MD Device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+   #banner .content_box h3{
+      font-size: 17px;
+   }
+   #banner .content_box p{
+      width: 100%;
+      font-size: 14px;
+   }
+   #banner .content_box ul li{
+      margin-bottom: 14px;
+   }
+   #banner .info_box_bottom{
+      margin-top: 20px;
+   }
+   #banner .info_box_bottom h4{
+      font-size: 16px;
+   }
+   #banner #header_area .menu_area .right_action ul li a{
+      font-size: 14px;
+   }
+}
+
+
+/*-- Phone Landscape --*/
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+   #banner .content_box{
+      padding-left: 0px;
+   }
+   #banner .content_box{
+      margin-top: 10px;
+   }
+   #banner .content_box h3{
+      font-size: 15px;
+   }
+   #banner .content_box p{
+      width: 100%;
+      font-size: 14px;
+   }
+   #banner .content_box ul li{
+      margin-right: 10px;
+      margin-bottom: 10px;
+   }
+   #banner .content_box ul li a{
+      width: auto;
+      font-size: 13px;
+      padding-left: 20px;
+      padding-right: 20px;
+   }
+   #banner .info_box_bottom{
+      margin-top: 10px;
+   }
+   #banner .info_box_bottom h4{
+      font-size: 16px;
+   }
+   #banner .main_content_row{
+      padding-bottom: 40px;
+   }
+   #banner #header_area .menu_area .right_action ul li a{
+      font-size: 13px;
+   }
+}
+
+
+/* Extra small Device. */
+@media (max-width: 575px) {
+   #banner .content_box{
+      padding-left: 0px;
+   }
+   #banner .content_box{
+      margin-top: 10px;
+   }
+   #banner .content_box h3{
+      font-size: 15px;
+   }
+   #banner .content_box p{
+      width: 100%;
+      font-size: 14px;
+   }
+   #banner .content_box ul li{
+      margin-right: 10px;
+      margin-bottom: 10px;
+   }
+   #banner .content_box ul li a{
+      width: auto;
+      font-size: 13px;
+      padding-left: 20px;
+      padding-right: 20px;
+   }
+   #banner .info_box_bottom{
+      margin-top: 10px;
+   }
+   #banner .info_box_bottom h4{
+      font-size: 16px;
+   }
+   #banner .main_content_row{
+      padding-bottom: 40px;
+   }
+   #banner #header_area .menu_area .right_action ul li a{
+      font-size: 13px;
+   }
+   #banner #header_area .logo_box{
+      text-align: center;
+   }
+   #banner #header_area .right_action{
+      text-align: center !important;
+      margin-top: 10px;
+   }
+   #banner #header_area{
+      padding-top: 10px;
+   }
+   #banner .image_box img{
+      width: 140px;
+   }
+}

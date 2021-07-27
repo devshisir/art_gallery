@@ -1,0 +1,110 @@
+#about_us{
+   background: #EFEDE0;
+   overflow-x: hidden;
+   .container-fluid{
+      padding: 0px !important;
+   }
+   .about_us_content{
+      h3{
+         color: #13130D;
+         font-weight: 700;
+         font-size: 31px;
+         line-height: 40px;
+      }
+      p{
+         margin-top: 20px;
+         font-size: 17px;
+         font-family: $cardo;
+         font-weight: 600;
+         color: #13130dc5;
+      }
+      a{
+         display: inline-block;
+         background-color: #13130D;
+         color: #fff;
+         text-transform: uppercase;
+         font-weight: 700;
+         font-size: 14px;
+         padding: 14px 40px;
+         border-radius: 3px;
+         margin-top: 20px;
+         &:hover{
+            opacity: 0.7;
+         }
+      }
+   }
+   .about_image{
+      img{
+         width: 100%;
+      }
+   }
+}
+
+
+
+/* XL (laptop) Device :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+   #banner #header_area{
+      padding-top: 20px;
+   }
+   #about_us{
+      padding: 50px 0px;
+   }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1300px) {}
+
+
+
+/* LG Device :992px. */
+@media (min-width: 992px) and (max-width: 1199px) {
+   #about_us{
+      padding: 50px 0px 50px 40px;
+   }
+}
+
+
+/* MD Device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+   #about_us{
+      padding: 50px 0px 50px 40px;
+   }
+   #about_us .about_us_content h3 {
+      font-size: 21px;
+      line-height: 29px;
+   }
+}
+
+/*-- Phone Landscape --*/
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+   #about_us{
+      padding: 50px;
+   }
+   .about_us_main_row{
+      display: flex;
+      flex-direction: column-reverse;
+   }
+}
+
+
+/* Extra small Device. */
+@media (max-width: 575px) {
+   #about_us{
+      padding: 50px 20px;
+   }
+   .about_us_main_row{
+      display: flex;
+      flex-direction: column-reverse;
+   }
+   #about_us .about_us_content h3 {
+      font-size: 21px;
+      line-height: 29px;
+   }
+   #about_us .about_us_content a{
+      display: block;
+      text-align: center;
+      padding-left: 0px;
+      padding-right: 0px;
+   }
+}

@@ -1,0 +1,112 @@
+#footer{
+   padding: 70px 0px;
+   background: #fff;
+   .social_link{
+      margin-top: 20px;
+      ul{
+         li{
+            display: inline-block;
+            font-size: 20px;
+            margin-right: 20px;
+            a{
+               color: #13130d7c;
+            }
+         }
+      }
+   }
+   .info{
+      margin-top: 15px;
+      p{
+         font-size: 14px;
+         font-weight: 500;
+         margin-bottom: 5px;
+         a{
+            &:hover{
+               text-decoration: underline;
+            }
+         }
+      }
+   }
+   .link_footer_box{
+      display: flex;
+      justify-content: space-between;
+      .link_box{
+         flex: 1;
+         width: 50%;
+         ul{
+            li{
+               border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+               width: 80%;
+               a{
+                  font-weight: 700;
+                  font-size: 12px;
+                  text-transform: uppercase;
+                  color: #13130d7c;
+                  padding: 6px 0px;
+                  display: block;
+                  &:hover{
+                     color: #333;
+                     text-decoration: underline;
+                  }
+               }
+            }
+         }
+      }
+   }
+   .right_footer_info{
+      .info_box{
+         margin-bottom: 30px;
+         h4{
+            font-weight: 600;
+            color: #333;
+            font-size: 14px;
+         }
+         ul{
+            margin-top: 10px;
+            li{
+               font-weight: 500;
+               font-size: 13px;
+               margin-bottom: 5px;
+            }
+         }
+         p{
+            font-weight: 500;
+            font-size: 13px;
+         }
+      }
+   }
+}
+
+/* MD Device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+   #footer .right_footer_info{
+      margin-top: 50px;
+   }
+}
+
+
+/*-- Phone Landscape --*/
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+   #footer .right_footer_info{
+      margin-top: 50px;
+   }
+   #footer .link_footer_box{
+      margin-top: 30px;
+   }
+}
+
+
+/* Extra small Device. */
+@media (max-width: 575px) {
+   #footer .right_footer_info{
+      margin-top: 30px;
+   }
+   #footer .link_footer_box{
+      margin-top: 30px;
+   }
+   #footer{
+      padding: 50px 0px;
+   }
+}
+
+

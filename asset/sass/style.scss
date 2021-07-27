@@ -1,0 +1,45 @@
+@import 'import/reset.scss';
+@import 'import/_color.scss';
+/*------------------------
+main code start here 
+-------------------------*/
+
+::-webkit-scrollbar {
+   display: none;
+}
+::-moz-scrollbar {
+   display: none;
+}
+::-o-scrollbar {
+   display: none;
+}
+::-ms-scrollbar {
+   display: none;
+}
+
+@import './component/banner.scss';
+@import './component/aboutus.scss';
+@import './component/gallery.scss';
+@import './component/footer.scss';
+@import './component/sidebar-menu.scss';
+@import './component/search-canvas.scss';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

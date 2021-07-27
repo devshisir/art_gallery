@@ -1,0 +1,80 @@
+#gallery_area{
+   padding: 100px 0px;
+   background-color: #F7F6EC;
+   .gal_item{
+      .top_title{
+         border-bottom: 2px solid #333;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding-bottom: 10px;
+         .left_box{
+            h3{
+               font-weight: 700;
+               font-size: 17px;
+            }
+         }
+         .right_box{
+            a{
+               font-weight: 600;
+               font-size: 15px;
+               color: #333;
+               i{
+                  margin-left: 5px;
+               }
+            }
+         }
+      }
+      .image_box{
+         margin-top: 15px;
+         img{
+            width: 100%;
+         }
+      }
+      .art_link{
+         ul{
+            li{
+               border-bottom: 1px solid #ddd;
+               a{
+                  font-weight: 600;
+                  color: #333;
+                  font-size: 14px;
+                  padding: 10px 0px;
+                  display: block;
+                  span{
+                     float: right;
+                  }
+                  &:hover{
+                     text-decoration: underline;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+/* MD Device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+   .gal_item{
+      margin-bottom: 30px;
+   }
+}
+/*-- Phone Landscape --*/
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+   .gal_item{
+      margin-bottom: 30px;
+   }
+   #gallery_area{
+      padding: 50px 0px;
+   }
+}
+/* Extra small Device. */
+@media (max-width: 575px) {
+   .gal_item{
+      margin-bottom: 30px;
+   }
+   #gallery_area{
+      padding: 50px 0px;
+   }
+}
